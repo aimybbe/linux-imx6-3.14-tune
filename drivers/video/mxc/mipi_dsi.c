@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2011-2013 Freescale Semiconductor, Inc. All Rights Reserved.
+ * Copyright (C) 2015 Simon Stürz <simon.stuerz@guh.guru>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -62,6 +63,12 @@ static struct mipi_dsi_match_lcd mipi_dsi_lcd_db[] = {
 	{
 	 "TRULY-WVGA",
 	 {mipid_hx8369_get_lcd_videomode, mipid_hx8369_lcd_setup}
+	},
+#endif
+#ifdef CONFIG_FB_MXC_OTM3201A_PANEL
+	{
+	 "OTM3201A",
+	 {mipid_otm3201a_get_lcd_videomode, mipid_otm3201a_lcd_setup}
 	},
 #endif
 	{
