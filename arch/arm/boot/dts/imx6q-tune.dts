@@ -1,0 +1,14 @@
+/*
+ * Copyright (C) 2014 Rabeeh Khoury (rabeeh@solid-run.com)
+ * Copyright (C) 2015 Simon Stürz <simon.stuerz@guh.guru>
+ * Based on work by Russell King
+ */
+/dts-v1/;
+
+#include "imx6q.dtsi"
+#include "imx6qdl-tune.dtsi"
+
+/ {
+	model = "Tune";
+	compatible = "guh,tune/q", "fsl,imx6q";
+};
